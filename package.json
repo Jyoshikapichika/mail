@@ -1,0 +1,12 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "An educational demonstration website presenting a Gmail-inspired responsive interface for Pattipati Lalitha, featuring NPTEL examination notification and hall-ticket PDF preview/download integration.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,2 @@
+# Uses Python 3 Standard Library only (http.server, json, os, socket, urllib.parse)
+# No third-party packages required.

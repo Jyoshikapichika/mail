@@ -1,0 +1,28 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+.next/
+
+# Documents & Binaries (Protecting personal Hall Ticket PDF & built APKs)
+*.pdf
+*.apk
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android & Gradle caches
+.gradle/
+build/
+android/
+local.properties
