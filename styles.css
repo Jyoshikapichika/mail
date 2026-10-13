@@ -46,24 +46,26 @@ body {
   overscroll-behavior-y: contain;
 }
 
-.demo-disclaimer-bar {
-  background: linear-gradient(90deg, #1e293b, #0f172a);
-  color: #f8fafc;
-  font-size: 0.78rem;
-  padding: 6px 16px;
-  text-align: center;
-  display: flex;
+.demo-subtle-badge {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  z-index: 1000;
+  background-color: #f1f3f4;
+  color: #5f6368;
+  font-size: 0.7rem;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid #dadce0;
+  font-weight: 500;
   letter-spacing: 0.2px;
+  white-space: nowrap;
 }
 
-.demo-disclaimer-bar strong {
-  color: #38bdf8;
-  font-weight: 600;
+.reading-tags-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+  flex-wrap: wrap;
 }
 
 .hidden {
@@ -898,6 +900,22 @@ body {
   opacity: 0.92;
 }
 
+.nptel-banner-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.nptel-banner-badges .demo-subtle-badge {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+  font-size: 0.68rem;
+  padding: 2px 6px;
+}
+
 .nptel-session-badge {
   background: #38bdf8;
   color: #082f49;
@@ -1608,6 +1626,14 @@ body {
     padding: 14px;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .nptel-banner-badges {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    gap: 8px;
   }
 
   .nptel-email-content {

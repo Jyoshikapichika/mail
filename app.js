@@ -765,10 +765,6 @@ function buildNptelEmailBodyHtml() {
 
   return `
     <div class="nptel-email-container">
-      <div style="background:#fee2e2;border:1px solid #fca5a5;color:#991b1b;padding:8px 14px;border-radius:8px;font-size:0.8rem;font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:8px;">
-        <span>⚠️</span>
-        <span>DEMO / SAMPLE EMAIL — Educational demonstration for Pattipati Lalitha. Not an official NPTEL message.</span>
-      </div>
       <div class="nptel-banner-header">
         <div class="nptel-banner-left">
           <img src="${HALL_TICKET_CONFIG.nptelLogoUrl}" alt="NPTEL Logo" class="nptel-header-logo" />
@@ -777,7 +773,10 @@ function buildNptelEmailBodyHtml() {
             <p>October 2026 Examination – Hall Ticket &amp; Test Centre Notification</p>
           </div>
         </div>
-        <span class="nptel-session-badge">Afternoon Session (${c.session})</span>
+        <div class="nptel-banner-badges">
+          <span class="nptel-session-badge">Afternoon Session (${c.session})</span>
+          <span class="demo-subtle-badge">Unofficial educational demo</span>
+        </div>
       </div>
 
       <div class="nptel-email-content">
@@ -1165,7 +1164,10 @@ function openEmailReadingView(emailId) {
       <div class="reading-subject-header">
         <div class="reading-subject-left">
           <h1 class="reading-subject">${email.subject}</h1>
-          <span class="inbox-chip">Inbox</span>
+          <div class="reading-tags-row">
+            <span class="inbox-chip">Inbox</span>
+            <span class="demo-subtle-badge">Unofficial educational demo</span>
+          </div>
         </div>
         <button type="button" id="readingStarBtn" class="star-btn ${starClass}" aria-label="Star message">
           ${starSymbol}
